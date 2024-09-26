@@ -1,6 +1,6 @@
 import numpy as np 
 import pandas as pd
-from plotnine import ggplot, geom_point, aes, geom_boxplot, geom_bar, geom_density
+from plotnine import ggplot, geom_point, aes, geom_boxplot, geom_bar, geom_density,guides,labs, xlab, ylab
 #Task 1
 #1
 #x = income, y= life expectancy, bubble size represents population size, color = world region, the data is 2010
@@ -46,5 +46,36 @@ aes(x = "exports",
   size = "energy",
   color= "four_regions"
   ))
-+ geom_point()
-)
++ geom_point(alpha=.5)
++ xlab("Exports (% of GDP)")
++ ylab("Exports (% of GDP)")
++guides(size=False)
++labs(title = 'Imports vs Exports as Percentage of GDP by Region',
+size='Energy Use', 
+color='Region'))
+
+
+#4
+
+#Task3
+#1
+#x= Individual internet users , y= gdp/capita, bubble size = income, color = world regions, data = 2001
+q2= pd.read_csv("/Users/alexandra/Desktop/GSB_544/Week 1/Lab_1/Data_Lab1/q2data.csv")
+
+#subset only 1997 data
+q2 = q2[q2['year']==1997]
+q2= q2.dropna()
+
+(ggplot(q2, 
+aes(x = "exports",
+  y = "imports",
+  size = "energy",
+  color= "four_regions"
+  ))
++ geom_point(alpha=.5)
++ xlab("Exports (% of GDP)")
++ ylab("Exports (% of GDP)")
++guides(size=False)
++labs(title = 'Imports vs Exports as Percentage of GDP by Region',
+size='Energy Use', 
+color='Region'))

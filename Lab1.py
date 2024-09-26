@@ -27,7 +27,6 @@ aes(x = "income",
 + geom_density(alpha=0.5)
 )
 
-#4
 #I created a density plot. It is not representative for the y variable, life expectancy. The graph is hard to read. 
 
 
@@ -60,22 +59,24 @@ color='Region'))
 #Task3
 #1
 #x= Individual internet users , y= gdp/capita, bubble size = income, color = world regions, data = 2001
-q2= pd.read_csv("/Users/alexandra/Desktop/GSB_544/Week 1/Lab_1/Data_Lab1/q2data.csv")
+q3= pd.read_csv("/Users/alexandra/Desktop/GSB_544/Week 1/Lab_1/Data_Lab1/q3data.csv")
 
 #subset only 1997 data
-q2 = q2[q2['year']==1997]
-q2= q2.dropna()
+q3 = q3[q3['year']==2001]
+q3= q3.dropna()
 
-(ggplot(q2, 
-aes(x = "exports",
-  y = "imports",
-  size = "energy",
+(ggplot(q3, 
+aes(x = "internet_users",
+  y = "gdp",
+  size = "income",
   color= "four_regions"
   ))
 + geom_point(alpha=.5)
-+ xlab("Exports (% of GDP)")
-+ ylab("Exports (% of GDP)")
++ ylab("GDP/capita")
++ xlab("Individuals using the internet")
 +guides(size=False)
 +labs(title = 'Imports vs Exports as Percentage of GDP by Region',
-size='Energy Use', 
+size='income', 
 color='Region'))
+
+# testing

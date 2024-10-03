@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Alexandra Grover">
-<meta name="dcterms.date" content="2024-10-01">
+<meta name="dcterms.date" content="2024-10-03">
 
 <title>Lab 1: Gapminder Data Visualization</title>
 <style>
@@ -3103,7 +3103,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 1, 2024</p>
+      <p class="date">October 3, 2024</p>
     </div>
   </div>
   
@@ -3115,7 +3115,7 @@ vertical-align: -.125em;
 </header>
 
 
-<div id="cell-1" class="cell" data-execution_count="29">
+<div id="cell-1" class="cell" data-execution_count="79">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np </span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> plotnine <span class="im">import</span> <span class="op">*</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -3131,7 +3131,8 @@ vertical-align: -.125em;
 </div>
 <div id="cell-4" class="cell" data-execution_count="50">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#2</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>q1<span class="op">=</span> pd.read_csv(<span class="st">&quot;/Users/alexandra/Desktop/GSB-544/Labs/Lab1/Data_Lab1/q1data (1).csv&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>q1<span class="op">=</span> pd.read_csv(<span class="st">&quot;/Users/alexandra/Desktop/GSB-544/Labs/Lab1/Data_Lab1/q1data (1).csv&quot;</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>q1.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="cell-5" class="cell" data-execution_count="69">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a></span>
@@ -3205,7 +3206,8 @@ vertical-align: -.125em;
 <p><strong>Task 2</strong> <strong>1.</strong> The aesthetics are: x= exports of GDP , y= imports of GDP. The geometry used is a scatter plot with geom_point(). The bubble size represents energy use. The color =shows world region. The data is from 1997, (this changes with the interactive graph.)</p>
 <div id="cell-10" class="cell" data-execution_count="62">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#2</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>q2<span class="op">=</span> pd.read_csv(<span class="st">&quot;/Users/alexandra/Desktop/GSB-544/Labs/Lab1/Data_Lab1/q2data.csv&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>q2<span class="op">=</span> pd.read_csv(<span class="st">&quot;/Users/alexandra/Desktop/GSB-544/Labs/Lab1/Data_Lab1/q2data.csv&quot;</span>)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>q2.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="cell-11" class="cell" data-execution_count="63">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>region_colors <span class="op">=</span> {</span>
@@ -3301,7 +3303,8 @@ dtype: object</code></pre>
 <div id="cell-19" class="cell" data-execution_count="75">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">#2</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>q3<span class="op">=</span> pd.read_csv(<span class="st">&quot;/Users/alexandra/Desktop/GSB-544/Labs/Lab1/Data_Lab1/q3data.csv&quot;</span>)</span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>q3.head()</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="cell-20" class="cell" data-execution_count="41">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>q3 <span class="op">=</span> q3.sort_values(by<span class="op">=</span><span class="st">&#39;income&#39;</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
